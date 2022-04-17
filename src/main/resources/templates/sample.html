@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee</title>
+<link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+</head>
+<body>
+<div class="container my-2" align="center">
+  
+    <table style="width:80%" border="1" 
+           class = "table table-striped table-responsive-md">
+    
+  <tbody>
+  <tr th:each="employee:${allemplist}">
+         <a href="annamia.html" th:href="${employee.ARTIST}" th:text="${employee.ARTIST}" />
+        <a href="annamia.html" th:href="${employee.TELUGU}" th:text="${employee.TELUGU}" />
+        <a href="annamia.html" th:href="${employee.MEANING}" th:text="${employee.MEANING}" />
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+cloud:
+  aws:
+    region:
+      static: us-east-1
+    stack:
+      auto: false
+    credentials:
+      accessKey: AKIASGB42ADONVUQOIXU
+      secretKey: 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
+
+application:
+  bucket:
+    name: annamayya
