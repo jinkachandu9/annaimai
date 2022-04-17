@@ -56,7 +56,7 @@ public class ControllerA {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	@GetMapping(value="/defect-details",produces=MediaType.TEXT_HTML_VALUE)
+	@GetMapping(value="/",produces=MediaType.TEXT_HTML_VALUE)
 	public String songs(Model model)
 	{	
 		model.addAttribute("allemplist",this.finald);
