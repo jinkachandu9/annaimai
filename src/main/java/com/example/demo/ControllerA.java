@@ -61,14 +61,14 @@ public class ControllerA {
 	{	
 		model.addAttribute("allemplist",this.finald);
 		
-		return "sample";
+		return "index";
 	}
 	@GetMapping(value="/defect-details1",produces=MediaType.TEXT_HTML_VALUE)
 	public String songs1(Model model)
 	{	
 		System.out.println("acv");
 		  ModelAndView modelAndView = new ModelAndView();
-		    modelAndView.setViewName("sample.html");
+		    modelAndView.setViewName("index.html");
 		model.addAttribute("allemplist",this.finald);
 		
 		return "annamai.html";
